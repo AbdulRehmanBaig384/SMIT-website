@@ -1,0 +1,943 @@
+/* */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+}
+
+header {
+    max-width: 100vw;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.container1 {
+    max-width: 100vw;
+    height: 3rem;
+    background-color: #EEEEEE;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    color: #666666;
+
+}
+
+.container1 .navbar {
+    margin: auto;
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portion1 {
+    display: flex;
+    align-items: center;
+
+}
+
+.portion1 * {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.portion2 {
+    background-color: white;
+    padding: 0.5rem 0.75rem;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.flag {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flag img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.container2 {
+    background-color: white;
+    position: sticky;
+    top: 3rem;
+    left: 0%;
+    max-width: 100vw;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.container2 .navbar2 {
+    position: static;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar2 .section-1 {
+    width: 210px;
+    height: 55px;
+}
+
+.section-1 img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 75vw;
+}
+
+.section-2 * {
+    margin-left: 0.25rem;
+}
+
+.section-2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    color: #000000D9;
+}
+
+.section-2 ul li {
+    padding: 0rem 0.5rem;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.25s ease-in;
+}
+
+
+#animation {
+    animation: colorChanging 0.75s linear none infinite;
+}
+
+@keyframes colorChanging {
+    from {
+        color: #0D6DB7
+    }
+
+    to {
+        color: #8DC63F;
+    }
+}
+
+
+.section-2 ul li:hover {
+    border-bottom: 3px solid #8DC63F;
+}
+
+.button1 {
+    padding: 0.75rem 1rem;
+    background-color: #0D6DB7;
+    border-radius: 0.5rem;
+    color: #EEEEEE;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+}
+
+.button2,
+.infos button {
+    padding: 0.75rem 1rem;
+    background-color: #8DC63F;
+    border-radius: 0.5rem;
+    color: #EEEEEE;
+    cursor: pointer;
+    border: 1px solid #0D6DB7;
+    transition: all 0.2s ease-in;
+
+}
+
+.infos {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infos button {
+    position: relative;
+    width: 95%;
+    margin-bottom: 0.5rem;
+    font-size: large;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.infos p {
+    align-self: flex-start;
+    font-size: 20px;
+    color: #EEEEEE;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.donateNowBox {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.button1:hover,
+.button2:hover {
+    transform: scale(1.05);
+}
+
+
+.heroSection {
+    margin-top: 100px;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    margin-bottom: 3rem;
+}
+
+.text-section {
+    width: 50%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 0.5rem;
+}
+
+.row1 {
+    font-size: 38px;
+    width: 320px;
+    color: #000000D9;
+    font-weight: 600;
+    pointer-events: none;
+
+}
+
+.row2 {
+    width: 100%;
+    color: #000000D9;
+    font-size: 24px;
+    font-weight: 600;
+    pointer-events: none;
+    height: 40px;
+}
+
+.text-typing {
+    display: inline-block;
+}
+
+.text {
+    border-right: 0.3rem solid #0d6db7;
+    animation: typing 8s linear infinite;
+    animation-direction: alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+.row3 {
+    width: 100%;
+    color: #000000D9;
+    font-size: 16px;
+    pointer-events: none;
+
+}
+
+.exploreMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 40px;
+    border: 1px solid #000000D9;
+    color: #000000D9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.image-section {
+    margin-top: 3rem;
+    background-size: cover;
+    width: 700px;
+    height: 520px;
+}
+
+.image-section img {
+    object-fit: contain;
+    height: inherit;
+    width: inherit;
+}
+
+.stripe {
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: #B6EF4933;
+    border-radius: 10px;
+    color: #000000D9;
+    padding: 30px;
+    margin-bottom: 4rem;
+}
+
+.option2,
+.option3,
+.option4,
+.option5,
+.option6 {
+    padding: 16px 32px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.option2:hover,
+.option3:hover,
+.option4:hover,
+.option5:hover {
+    transform: scale(1.1);
+    background-color: #424242;
+    color: white;
+}
+
+.option6 {
+    background-color: #8DC63F;
+    color: #FFFFFF;
+}
+
+.option6:hover {
+    transform: scale(1.1);
+}
+
+
+.option1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.option1> :first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #424242;
+    color: #FFFFFF;
+    height: 54px;
+    width: 72px;
+    border-radius: 8px 0px 0px 8px;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.option1> :nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #424242;
+    color: #FFFFFF;
+    height: 54px;
+    width: 60px;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.option1 input {
+    padding: 15px;
+}
+
+.hero-image {
+    margin: auto;
+    width: 95vw;
+    height: 600px;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+}
+
+.hero-image img {
+    height: inherit;
+    width: inherit;
+    border-radius: 8px;
+}
+
+h1,
+h3 {
+    color: rgb(53, 48, 48);
+    text-align: center;
+    text-transform: capitalize;
+    font-optical-sizing: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0px 0px;
+    padding: 50px 0px;
+    width: 95%;
+    margin: auto;
+}
+
+.boxGreen {
+    background-color: #b6ef4933;
+    transition: transform .2s;
+    width: 210px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.boxGreen:hover {
+    transform: scale(1.1);
+}
+
+.boxGreen img {
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.container_1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box_1 {
+    background-color: #00000099;
+    transition: transform .4s;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0.4) 100%), url("https://res.cloudinary.com/saylani-welfare/image/upload/v1676274365/website-images/dynamic/b0abff1d-a3f9-49a7-9d58-273bbc735561.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.box_1:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.2) 100%), url("https://res.cloudinary.com/saylani-welfare/image/upload/v1676274365/website-images/dynamic/b0abff1d-a3f9-49a7-9d58-273bbc735561.jpg");
+
+}
+
+.box_2 {
+    background-color: #00000099;
+    transition: transform .4s;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0.4) 100%), url("https://res.cloudinary.com/saylani-welfare/image/upload/v1720264120/website-images/dynamic/c029347b-b528-4c27-8a1b-39366f5349d7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.box_2:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.2) 100%), url("https://res.cloudinary.com/saylani-welfare/image/upload/v1720264120/website-images/dynamic/c029347b-b528-4c27-8a1b-39366f5349d7.jpg");
+
+}
+
+.box_3 {
+    background-color: #00000099;
+    transition: transform .4s;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0.4) 100%), url("https://res.cloudinary.com/saylani-welfare/image/upload/v1654923364/website-images/dynamic/c6fdf6af-51d5-4388-97ef-6cf10eb73aca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+.box_3:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.2) 100%), url("https://res.cloudinary.com/saylani-welfare/image/upload/v1654923364/website-images/dynamic/c6fdf6af-51d5-4388-97ef-6cf10eb73aca.jpg");
+
+}
+
+h2 {
+    color: white;
+    font: 24px;
+    margin: 0px 0px 0px 24px;
+    text-align-last: left;
+    bottom: 7px;
+    left: 50px;
+}
+
+button {
+    background-color: green;
+    position: absolute;
+}
+
+.container_2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
+}
+
+.box_4 {
+    width: 650px;
+    height: 500px;
+    border-top-left-radius: 100px;
+    background-image: url("https://i.tribune.com.pk/media/images/2178912-image-1584559620/2178912-image-1584559620.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box_5 {
+    width: 600px;
+    height: 500px;
+    padding-left: 30px;
+
+}
+
+.heading {
+    text-align: start;
+    margin-inline-start: -50.10px;
+}
+
+dt {
+    margin-top: 0.5rem;
+    color: #0d6db7;
+    font-size: large;
+}
+
+.greenBox {
+    height: 50%;
+    width: 50%;
+    background-color: #8DC63F;
+    border-top-left-radius: 50px;
+    outline: 3px solid white;
+    outline: 0px 3px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    color: #EEEEEE;
+    font-size: 20px;
+
+}
+
+.emptyBox {
+    height: 50%;
+    width: 50%;
+    outline: 3px solid white;
+
+}
+
+
+.main {
+    background-color: #0d6db7;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 34px;
+    color: white;
+    width: 91vw;
+    margin: auto;
+
+
+
+
+}
+ .backbox {
+    background-image: url("https://www.saylaniwelfare.com/static/media/upcoming_background.a669f19ea2aee3c7e10f.png");
+    width: inherit;
+    height: 70vh;
+    opacity: 0.2;
+    position: absolute;
+}
+
+.box {
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.box img {
+    padding: 34px;
+
+
+}
+
+.sec> :first-child {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.sec {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.section1 {
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 91vw;
+    margin: auto;
+}
+
+.section1> :first-child {
+    color: #8dc63f;
+}
+
+.section1> :nth-child(2) {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.section2 {
+    width: 91vw;
+    height: 70vh;
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: auto;
+}
+
+.section2 img {
+    object-fit: cover;
+    height: 93px;
+    border-radius: 100%;
+}
+
+
+.section2>:nth-child(2) {
+    color: #0d6db7;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section2>:nth-child(4) {
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.btn {
+    height: 5rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn .click {
+    border: none;
+    padding: 0;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 16px;
+
+}
+
+.click i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+.white {
+    background-color: white;
+}
+
+.green {
+    background-color: #8dc63f;
+    color: #EEEEEE;
+}
+
+.p {
+    padding: 13px 70px;
+}
+
+  .media_heading {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5% 10%;
+  }
+  .video_content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+  }
+  .video  {
+    /* gap: 1rem; */
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    /* padding: 20px; */
+    border: 1px solid #eae2e2;
+    justify-content: space-between;
+    border-top: none;
+  }
+  .media-text{
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* padding: 10px; */
+  }
+  /** card code css **/
+  .card-container{
+    width: 95vw;
+    margin: auto;
+      display:flex;
+      gap: 1rem;
+  }
+  .news_h1{
+     padding: 5% 10%;
+     margin: 0% 35%;
+  }
+  .news-card {
+    height: 68vh;
+    background-color: #eee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 380px;
+    margin-bottom: 3rem;
+    transition: all 0.3s linear;
+  }
+  .news-card:hover {
+    transform: translateY(-10px);
+  }
+  .news-card img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+  .news-card-content {
+    padding: 15px;
+  }
+  .news-card-description {
+    font-size: 1em;
+    color: #000000;
+    margin: 10px 0px;
+    font-weight: 500
+  }
+  .news-card-date {
+    width: 90px;
+    font-size: 0.6em;
+    color: white;
+    padding: 10px;
+    background-color: rgb(155, 226, 48);
+    border-radius:5px;
+  }
+  button.card-arrow{
+    cursor: pointer;
+    width: 50px;
+    height: 6.5vh;
+    text-decoration: none;
+    background-color:white;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s linear;
+  }
+  button.card-arrow:hover{
+    transform: translatex(-10px);
+  }
+  /** guide section code **/
+  .guide-container{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 18rem;
+    background-image: url(https://www.saylaniwelfare.com/static/media/guide_back.3a5127e910c15a49f875.png);
+    Background-color: #0d6db7;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+  .saylani-guide{
+    font-weight: 500;
+  font-size: 2.5rem;
+  color: #EEEEEE;
+  }
+  .guide-container input{
+    padding:20px 260px 15px 260px;
+    background: transparent;
+    outline: none;
+    border: solid 1px white;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+.subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50%;
+    height: 8vh;
+    text-decoration: none;
+    background-color:white;
+    border-radius: 5px;
+    border:none;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  footer{
+    height: 70vh;
+    width: 100%;
+    background-color: #424242;
+    position: relative;
+}
+
+.cover{
+    height: inherit;
+    width: inherit;
+    opacity: 0.2;
+    position: absolute;
+    background-image: url("https://www.saylaniwelfare.com/static/media/upcoming_background.a669f19ea2aee3c7e10f.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.strip1{
+    padding-top: 30px;
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.strip1 li{
+    margin-bottom:1rem;
+    list-style: none;
+}
+
+.footColumns1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.footColumns1 .lineImage1, .lineImage2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+    
+}
+
+.lineImage1 img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.lineImage2 img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.strip2{
+    width: 20%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 250px;
+}
+
+.strip2 img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.strip3 , .strip4 {
+    position: relative;
+    text-align: center;
+    color: #e5e7eb;
+    top: 290px;
+}
+
+.strip3{
+    margin-bottom: 30px;
+}
